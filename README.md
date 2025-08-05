@@ -1,20 +1,68 @@
-# Snake
-## Using p5 JS
+🐍 بازی کلاسیک مار (با استفاده از p5.js)
+این پروژه نسخه‌ای ساده و مینیمالیستی از بازی کلاسیک مار (Snake) است که با استفاده از کتابخانه‌ی p5.js در محیط مرورگر توسعه داده شده است.
+هدف اصلی از ساخت این بازی، یادگیری اصول پایه‌ای توسعه‌ی بازی‌های دوبعدی، استفاده از بوم (Canvas) در مرورگر، و تسلط بیشتر بر پویانمایی و تعامل در جاوااسکریپت بود.
 
-Snake is a recreation of the vintage snake game, developed to work on cross browser platforms for various devices.
+🎯 اهداف پروژه
+یادگیری ساخت لوپ بازی (Game Loop) و رسم گرافیک دوبعدی در مرورگر
 
-I took on this project to learn to make light browser games and canvases and to get acquainted with the p5 JS library. This game is further meant to be assigned to the freshers as a begineer's project, so they can build a project (using other languages and libraries like PyGame) on their own having this game as a reference.
+آشنایی با کتابخانه‌ی p5.js برای کدنویسی خلاق و سبک
 
-![screenshot of the game](snake_screenshot.png)
+بازآفرینی بازی Snake به عنوان یک تمرین آموزشی
 
-### The game has a very minimilistic object rendering with two categories of objects made from the same class
-#### 1. foodBlock
-#### 2. playerBlocks (array of player blocks)
+ارائه‌ی یک پروژه‌ی ساده برای تازه‌کارها جهت یادگیری و توسعه شخصی
 
-### The collision detection is quite simple, and takes place in the following way
-the absoulte distance between the x and y coordinates of the headBlock and the rest of the playerBlocks (and foodBlock) is less than some previously set value. 
+🕹 ویژگی‌ها
+رندر ساده و سبک با استفاده از Canvas
 
-### Following are some of the features to be added to the project :
-1. Add a UI and link it with the game, wherein attributes like the color, game speed, etc. can be tweaked with a switch of a button or a slider.
-2. Change the control configurations to support touchscreen devices.
-3. Improve the collision detection, especially for the playerBlock-playerBlock collisions.
+استفاده از دو نوع شیء اصلی در بازی:
+
+foodBlock – بلوک غذا که به‌صورت تصادفی ظاهر می‌شود
+
+playerBlocks – آرایه‌ای از بلوک‌های متصل که مار را تشکیل می‌دهند
+
+تشخیص برخورد ساده:
+
+بر اساس فاصله مطلق بین مختصات headBlock و سایر بلوک‌ها
+
+اگر فاصله X و Y کمتر از مقدار مشخصی باشد، برخورد تشخیص داده می‌شود
+
+📸 تصویر بازی
+(در این بخش می‌توانید یک اسکرین‌شات از بازی خود قرار دهید)
+
+markdown
+Copy
+Edit
+![تصویر بازی](./screenshot.png)
+⚙️ تکنولوژی‌های استفاده‌شده
+JavaScript
+
+p5.js – کتابخانه‌ای برای گرافیک تعاملی و برنامه‌نویسی خلاق
+
+🚀 امکانات پیشنهادی برای نسخه‌های بعدی
+اضافه‌کردن رابط کاربری (UI) برای تغییر:
+
+رنگ مار
+
+سرعت بازی
+
+اندازه‌ی شبکه بازی
+
+بهبود الگوریتم تشخیص برخورد
+
+پشتیبانی از کنترل‌های لمسی برای دستگاه‌های موبایل و تبلت
+
+افزودن صفحه‌ی Game Over و دکمه‌ی شروع مجدد
+
+نمایش امتیاز و ثبت رکورد
+
+📁 ساختار فایل‌های پروژه
+bash
+Copy
+Edit
+snake-game/
+├── index.html
+├── sketch.js       # منطق اصلی بازی
+└── style.css       # (اختیاری) برای طراحی ظاهر یا رابط کاربری
+👨‍💻 درباره‌ی توسعه‌دهنده
+این پروژه توسط سایت پارس توسعه داده شده است و بخشی از مسیر یادگیری شخصی برای ساخت بازی‌های تحت مرورگر است.
+شما می‌توانید این پروژه را فورک کرده، تغییر دهید یا به عنوان پایه‌ای برای پروژه‌های خود استفاده کنید.
